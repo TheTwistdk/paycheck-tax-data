@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026.3",
+  "taxYear": 2026,
+  "effectiveDate": "2026-01-01",
+  "lastUpdated": "2026-10-25",
+  "sources": [
+    "IRS Rev. Proc. 2025-32 (2026 brackets and standard deductions)",
+    "SSA 2026 contribution and benefit base ($184,500)",
+    "California EDD 2026 SDI rate (1.3%, no wage cap)",
+    "Tax Foundation, 2026 State Income Tax Rates and Brackets (as of January 1, 2026)",
+    "IRS 2026 401(k) limit ($24,500)",
+    "SC DOR IL26-20 (Act 110 of 2026); GA DOR 2026 withholding; NY DFS 2026 PFL decision; NJ DOL 2026 rates",
+    "City finance departments (Philadelphia, Detroit, NYC, Ohio municipalities)",
+    "State departments of revenue withholding guides"
+  ],
+  "federal": {
+    "standardDeduction": {
+      "single": 16100,
+      "marriedJointly": 32200,
+      "marriedSeparately": 16100,
+      "headOfHousehold": 24150
+    },
+    "brackets": {
+      "single": [
+        { "upTo": 12400, "rate": 0.10 }, { "upTo": 50400, "rate": 0.12 }, { "upTo": 105700, "rate": 0.22 },
+        { "upTo": 201775, "rate": 0.24 }, { "upTo": 256225, "rate": 0.32 }, { "upTo": 640600, "rate": 0.35 },
+        { "rate": 0.37 }
+      ],
+      "marriedJointly": [
+        { "upTo": 24800, "rate": 0.10 }, { "upTo": 100800, "rate": 0.12 }, { "upTo": 211400, "rate": 0.22 },
+        { "upTo": 403550, "rate": 0.24 }, { "upTo": 512450, "rate": 0.32 }, { "upTo": 768700, "rate": 0.35 },
+        { "rate": 0.37 }
+      ],
+      "marriedSeparately": [
+        { "upTo": 12400, "rate": 0.10 }, { "upTo": 50400, "rate": 0.12 }, { "upTo": 105700, "rate": 0.22 },
+        { "upTo": 201775, "rate": 0.24 }, { "upTo": 256225, "rate": 0.32 }, { "upTo": 384350, "rate": 0.35 },
+        { "rate": 0.37 }
+      ],
+      "headOfHousehold": [
+        { "upTo": 17700, "rate": 0.10 }, { "upTo": 67450, "rate": 0.12 }, { "upTo": 105700, "rate": 0.22 },
+        { "upTo": 201750, "rate": 0.24 }, { "upTo": 256200, "rate": 0.32 }, { "upTo": 640600, "rate": 0.35 },
+        { "rate": 0.37 }
+      ]
+    },
+    "retirementContributionLimit": 24500,
+    "socialSecurity": { "rate": 0.062, "wageBase": 184500 },
+    "medicare": {
+      "rate": 0.0145,
+      "additionalRate": 0.009,
+      "additionalThreshold": { "single": 200000, "marriedJointly": 250000, "marriedSeparately": 125000 }
+    }
+  },
+  "states": {
+    "AL": {
+      "name": "Alabama",
+      "localities": [ { "name": "Birmingham", "residentRate": 0.01, "nonresidentRate": 0.01 } ],
+      "brackets": {
+        "single": [ { "upTo": 500, "rate": 0.02 }, { "upTo": 3000, "rate": 0.04 }, { "rate": 0.05 } ],
+        "marriedJointly": [ { "upTo": 1000, "rate": 0.02 }, { "upTo": 6000, "rate": 0.04 }, { "rate": 0.05 } ]
+      },
+      "standardDeduction": { "single": 3000, "marriedJointly": 8500, "marriedSeparately": 4250, "headOfHousehold": 5200 },
+      "personalExemption": { "single": 1500, "marriedJointly": 3000 },
+      "notes": "Ignores Alabama's deduction for federal income tax paid and local occupational taxes; standard deduction shown at its maximum."
+    },
+    "AK": { "name": "Alaska" },
+    "AZ": {
+      "name": "Arizona",
+      "brackets": { "single": [ { "rate": 0.025 } ] },
+      "standardDeduction": { "single": 8350, "marriedJointly": 16700, "headOfHousehold": 12500 },
+      "notes": "Arizona uses the pre-2025 federal standard deduction for 2026 unless it adopts the higher amounts."
+    },
+    "AR": {
+      "name": "Arkansas",
+      "brackets": { "single": [ { "upTo": 4600, "rate": 0.02 }, { "rate": 0.039 } ] },
+      "standardDeduction": { "single": 2470, "marriedJointly": 4940 },
+      "personalCredit": { "single": 29, "marriedJointly": 58 }
+    },
+    "CA": {
+      "name": "California",
+      "brackets": {
+        "single": [
+          { "upTo": 11079, "rate": 0.01 }, { "upTo": 26264, "rate": 0.02 }, { "upTo": 41452, "rate": 0.04 },
+          { "upTo": 57542, "rate": 0.06 }, { "upTo": 72724, "rate": 0.08 }, { "upTo": 371479, "rate": 0.093 },
+          { "upTo": 445771, "rate": 0.103 }, { "upTo": 742953, "rate": 0.113 }, { "upTo": 1000000, "rate": 0.123 },
+          { "rate": 0.133 }
+        ],
+        "marriedJointly": [
+          { "upTo": 22158, "rate": 0.01 }, { "upTo": 52528, "rate": 0.02 }, { "upTo": 82904, "rate": 0.04 },
+          { "upTo": 115084, "rate": 0.06 }, { "upTo": 145448, "rate": 0.08 }, { "upTo": 742958, "rate": 0.093 },
+          { "upTo": 891542, "rate": 0.103 }, { "upTo": 1000000, "rate": 0.113 }, { "upTo": 1485906, "rate": 0.123 },
+          { "rate": 0.133 }
+        ],
+        "headOfHousehold": [
+          { "upTo": 22173, "rate": 0.01 }, { "upTo": 52530, "rate": 0.02 }, { "upTo": 67716, "rate": 0.04 },
+          { "upTo": 83805, "rate": 0.06 }, { "upTo": 98990, "rate": 0.08 }, { "upTo": 505208, "rate": 0.093 },
+          { "upTo": 606251, "rate": 0.103 }, { "upTo": 1000000, "rate": 0.113 }, { "upTo": 1010417, "rate": 0.123 },
+          { "rate": 0.133 }
+        ]
+      },
+      "standardDeduction": { "single": 5706, "marriedJointly": 11412, "headOfHousehold": 11412 },
+      "personalCredit": { "single": 153, "marriedJointly": 306, "headOfHousehold": 153 },
+      "payrollTaxes": [ { "name": "State disability insurance (SDI)", "rate": 0.013 } ],
+      "notes": "Uses the 2025 indexed brackets and deduction; the FTB publishes 2026 figures late in the year."
+    },
+    "CO": {
+      "name": "Colorado",
+      "brackets": { "single": [ { "rate": 0.044 } ] },
+      "useFederalStandardDeduction": true,
+      "payrollTaxes": [ { "name": "Paid family and medical leave (FAMLI)", "rate": 0.0044, "wageBase": 184500 } ]
+    },
+    "CT": {
+      "name": "Connecticut",
+      "brackets": {
+        "single": [ { "upTo": 10000, "rate": 0.02 }, { "upTo": 50000, "rate": 0.045 }, { "upTo": 100000, "rate": 0.055 }, { "upTo": 200000, "rate": 0.06 }, { "upTo": 250000, "rate": 0.065 }, { "upTo": 500000, "rate": 0.069 }, { "rate": 0.0699 } ],
+        "marriedJointly": [ { "upTo": 20000, "rate": 0.02 }, { "upTo": 100000, "rate": 0.045 }, { "upTo": 200000, "rate": 0.055 }, { "upTo": 400000, "rate": 0.06 }, { "upTo": 500000, "rate": 0.065 }, { "upTo": 1000000, "rate": 0.069 }, { "rate": 0.0699 } ],
+        "headOfHousehold": [ { "upTo": 16000, "rate": 0.02 }, { "upTo": 80000, "rate": 0.045 }, { "upTo": 160000, "rate": 0.055 }, { "upTo": 320000, "rate": 0.06 }, { "upTo": 400000, "rate": 0.065 }, { "upTo": 800000, "rate": 0.069 }, { "rate": 0.0699 } ]
+      },
+      "standardDeduction": { "single": 15000, "marriedJointly": 24000, "headOfHousehold": 19000, "marriedSeparately": 12000 },
+      "standardDeductionPhaseOut": {
+        "single": { "start": 30000, "rate": 1 },
+        "marriedJointly": { "start": 48000, "rate": 1 },
+        "headOfHousehold": { "start": 38000, "rate": 1 },
+        "marriedSeparately": { "start": 24000, "rate": 1 }
+      },
+      "payrollTaxes": [ { "name": "Paid leave", "rate": 0.005, "wageBase": 184500 } ],
+      "notes": "Connecticut's personal exemption is modeled as the standard deduction with its phase-out; the 2% bracket recapture is ignored."
+    },
+    "DE": {
+      "name": "Delaware",
+      "localities": [ { "name": "Wilmington", "residentRate": 0.0125, "nonresidentRate": 0.0125 } ],
+      "brackets": { "single": [ { "upTo": 2000, "rate": 0 }, { "upTo": 5000, "rate": 0.022 }, { "upTo": 10000, "rate": 0.039 }, { "upTo": 20000, "rate": 0.048 }, { "upTo": 25000, "rate": 0.052 }, { "upTo": 60000, "rate": 0.0555 }, { "rate": 0.066 } ] },
+      "standardDeduction": { "single": 3250, "marriedJointly": 6500 },
+      "personalCredit": { "single": 110, "marriedJointly": 220 },
+      "payrollTaxes": [ { "name": "Paid leave", "rate": 0.004, "wageBase": 184500 } ],
+      "notes": "Wilmington city wage tax is included when chosen."
+    },
+    "DC": {
+      "name": "District of Columbia",
+      "brackets": { "single": [ { "upTo": 10000, "rate": 0.04 }, { "upTo": 40000, "rate": 0.06 }, { "upTo": 60000, "rate": 0.065 }, { "upTo": 250000, "rate": 0.085 }, { "upTo": 500000, "rate": 0.0925 }, { "upTo": 1000000, "rate": 0.0975 }, { "rate": 0.1075 } ] },
+      "useFederalStandardDeduction": true,
+      "taxesNonresidents": false
+    },
+    "FL": { "name": "Florida" },
+    "GA": {
+      "name": "Georgia",
+      "brackets": { "single": [ { "rate": 0.0519 } ] },
+      "standardDeduction": { "single": 12000, "marriedJointly": 24000 },
+      "notes": "2026 stays at 5.19%: the scheduled 0.10-point cut was delayed by the revenue trigger (GA DOR 2026 withholding)."
+    },
+    "HI": {
+      "name": "Hawaii",
+      "brackets": {
+        "single": [ { "upTo": 9600, "rate": 0.014 }, { "upTo": 14400, "rate": 0.032 }, { "upTo": 19200, "rate": 0.055 }, { "upTo": 24000, "rate": 0.064 }, { "upTo": 36000, "rate": 0.068 }, { "upTo": 48000, "rate": 0.072 }, { "upTo": 125000, "rate": 0.076 }, { "upTo": 175000, "rate": 0.079 }, { "upTo": 225000, "rate": 0.0825 }, { "upTo": 275000, "rate": 0.09 }, { "upTo": 325000, "rate": 0.10 }, { "rate": 0.11 } ],
+        "marriedJointly": [ { "upTo": 19200, "rate": 0.014 }, { "upTo": 28800, "rate": 0.032 }, { "upTo": 38400, "rate": 0.055 }, { "upTo": 48000, "rate": 0.064 }, { "upTo": 72000, "rate": 0.068 }, { "upTo": 96000, "rate": 0.072 }, { "upTo": 250000, "rate": 0.076 }, { "upTo": 350000, "rate": 0.079 }, { "upTo": 450000, "rate": 0.0825 }, { "upTo": 550000, "rate": 0.09 }, { "upTo": 650000, "rate": 0.10 }, { "rate": 0.11 } ],
+        "headOfHousehold": [ { "upTo": 14400, "rate": 0.014 }, { "upTo": 21600, "rate": 0.032 }, { "upTo": 28800, "rate": 0.055 }, { "upTo": 36000, "rate": 0.064 }, { "upTo": 54000, "rate": 0.068 }, { "upTo": 72000, "rate": 0.072 }, { "upTo": 187500, "rate": 0.076 }, { "upTo": 262500, "rate": 0.079 }, { "upTo": 337500, "rate": 0.0825 }, { "upTo": 412500, "rate": 0.09 }, { "upTo": 487500, "rate": 0.10 }, { "rate": 0.11 } ]
+      },
+      "standardDeduction": { "single": 4400, "marriedJointly": 8800, "headOfHousehold": 6424 },
+      "personalExemption": { "single": 1144, "marriedJointly": 2288 },
+      "notes": "Temporary disability insurance withholding not included."
+    },
+    "ID": {
+      "name": "Idaho",
+      "brackets": {
+        "single": [ { "upTo": 4811, "rate": 0 }, { "rate": 0.053 } ],
+        "marriedJointly": [ { "upTo": 9622, "rate": 0 }, { "rate": 0.053 } ]
+      },
+      "useFederalStandardDeduction": true
+    },
+    "IL": {
+      "name": "Illinois",
+      "brackets": { "single": [ { "rate": 0.0495 } ] },
+      "noStandardDeduction": true,
+      "personalExemption": { "single": 2925, "marriedJointly": 5850 },
+      "reciprocity": [ "IA", "KY", "MI", "WI" ]
+    },
+    "IN": {
+      "name": "Indiana",
+      "brackets": { "single": [ { "rate": 0.0295 } ] },
+      "noStandardDeduction": true,
+      "personalExemption": { "single": 1000, "marriedJointly": 2000 },
+      "localTaxRate": 0.0165,
+      "reciprocity": [ "KY", "MI", "OH", "PA", "WI" ],
+      "notes": "County income tax uses a typical rate (counties range roughly 0.5%-3.4%)."
+    },
+    "IA": {
+      "name": "Iowa",
+      "brackets": { "single": [ { "rate": 0.038 } ] },
+      "useFederalStandardDeduction": true,
+      "personalCredit": { "single": 40, "marriedJointly": 80 },
+      "reciprocity": [ "IL" ]
+    },
+    "KS": {
+      "name": "Kansas",
+      "brackets": {
+        "single": [ { "upTo": 23000, "rate": 0.052 }, { "rate": 0.0558 } ],
+        "marriedJointly": [ { "upTo": 46000, "rate": 0.052 }, { "rate": 0.0558 } ]
+      },
+      "standardDeduction": { "single": 3605, "marriedJointly": 8240, "marriedSeparately": 4120, "headOfHousehold": 6180 },
+      "personalExemption": { "single": 9160, "marriedJointly": 18320 }
+    },
+    "KY": {
+      "name": "Kentucky",
+      "localities": [
+        { "name": "Louisville", "residentRate": 0.022, "nonresidentRate": 0.0145, "notes": "Approximate combined occupational tax." },
+        { "name": "Lexington", "residentRate": 0.0225, "nonresidentRate": 0.0225, "notes": "Approximate combined occupational tax." }
+      ],
+      "brackets": { "single": [ { "rate": 0.035 } ] },
+      "standardDeduction": { "single": 3360, "marriedJointly": 3360 },
+      "reciprocity": [ "IL", "IN", "MI", "OH", "VA", "WV", "WI" ],
+      "notes": "Louisville and Lexington occupational taxes are included when chosen; other local license taxes are not."
+    },
+    "LA": {
+      "name": "Louisiana",
+      "brackets": { "single": [ { "rate": 0.03 } ] },
+      "standardDeduction": { "single": 12875, "marriedJointly": 25750, "headOfHousehold": 25750 }
+    },
+    "ME": {
+      "name": "Maine",
+      "brackets": {
+        "single": [ { "upTo": 27399, "rate": 0.058 }, { "upTo": 64849, "rate": 0.0675 }, { "rate": 0.0715 } ],
+        "marriedJointly": [ { "upTo": 54849, "rate": 0.058 }, { "upTo": 129749, "rate": 0.0675 }, { "rate": 0.0715 } ],
+        "headOfHousehold": [ { "upTo": 41100, "rate": 0.058 }, { "upTo": 97300, "rate": 0.0675 }, { "rate": 0.0715 } ]
+      },
+      "standardDeduction": { "single": 8350, "marriedJointly": 16700, "headOfHousehold": 12500 },
+      "personalExemption": { "single": 5300, "marriedJointly": 10600 },
+      "notes": "Head-of-household brackets estimated from the 2025 schedule; Maine uses the pre-2025 federal standard deduction for 2026."
+    },
+    "MD": {
+      "name": "Maryland",
+      "brackets": {
+        "single": [ { "upTo": 1000, "rate": 0.02 }, { "upTo": 2000, "rate": 0.03 }, { "upTo": 3000, "rate": 0.04 }, { "upTo": 100000, "rate": 0.0475 }, { "upTo": 125000, "rate": 0.05 }, { "upTo": 150000, "rate": 0.0525 }, { "upTo": 250000, "rate": 0.055 }, { "upTo": 500000, "rate": 0.0575 }, { "upTo": 1000000, "rate": 0.0625 }, { "rate": 0.065 } ],
+        "marriedJointly": [ { "upTo": 1000, "rate": 0.02 }, { "upTo": 2000, "rate": 0.03 }, { "upTo": 3000, "rate": 0.04 }, { "upTo": 150000, "rate": 0.0475 }, { "upTo": 175000, "rate": 0.05 }, { "upTo": 225000, "rate": 0.0525 }, { "upTo": 300000, "rate": 0.055 }, { "upTo": 600000, "rate": 0.0575 }, { "upTo": 1200000, "rate": 0.0625 }, { "rate": 0.065 } ],
+        "headOfHousehold": [ { "upTo": 1000, "rate": 0.02 }, { "upTo": 2000, "rate": 0.03 }, { "upTo": 3000, "rate": 0.04 }, { "upTo": 150000, "rate": 0.0475 }, { "upTo": 175000, "rate": 0.05 }, { "upTo": 225000, "rate": 0.0525 }, { "upTo": 300000, "rate": 0.055 }, { "upTo": 600000, "rate": 0.0575 }, { "upTo": 1200000, "rate": 0.0625 }, { "rate": 0.065 } ]
+      },
+      "standardDeduction": { "single": 3350, "marriedJointly": 6700, "headOfHousehold": 6700 },
+      "personalExemption": { "single": 3200, "marriedJointly": 6400 },
+      "localTaxRate": 0.0307,
+      "reciprocity": [ "DC", "PA", "VA", "WV" ],
+      "notes": "County income tax uses a typical rate (counties range 2.25%-3.3%)."
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "brackets": { "single": [ { "upTo": 1083150, "rate": 0.05 }, { "rate": 0.09 } ] },
+      "noStandardDeduction": true,
+      "personalExemption": { "single": 4400, "marriedJointly": 8800, "headOfHousehold": 6800 },
+      "payrollTaxes": [ { "name": "Paid family and medical leave", "rate": 0.0046, "wageBase": 184500 } ]
+    },
+    "MI": {
+      "name": "Michigan",
+      "localities": [
+        { "name": "Detroit", "residentRate": 0.024, "nonresidentRate": 0.012 },
+        { "name": "Grand Rapids", "residentRate": 0.015, "nonresidentRate": 0.0075 },
+        { "name": "Lansing", "residentRate": 0.01, "nonresidentRate": 0.005 },
+        { "name": "Flint", "residentRate": 0.01, "nonresidentRate": 0.005 },
+        { "name": "Another Michigan city with income tax", "residentRate": 0.01, "nonresidentRate": 0.005 }
+      ],
+      "brackets": { "single": [ { "rate": 0.0425 } ] },
+      "noStandardDeduction": true,
+      "personalExemption": { "single": 5900, "marriedJointly": 11800 },
+      "reciprocity": [ "IL", "IN", "KY", "MN", "OH", "WI" ],
+      "notes": "City income taxes are included when a city is chosen."
+    },
+    "MN": {
+      "name": "Minnesota",
+      "brackets": {
+        "single": [ { "upTo": 33310, "rate": 0.0535 }, { "upTo": 109430, "rate": 0.068 }, { "upTo": 203150, "rate": 0.0785 }, { "rate": 0.0985 } ],
+        "marriedJointly": [ { "upTo": 48700, "rate": 0.0535 }, { "upTo": 193480, "rate": 0.068 }, { "upTo": 337930, "rate": 0.0785 }, { "rate": 0.0985 } ],
+        "headOfHousehold": [ { "upTo": 41010, "rate": 0.0535 }, { "upTo": 164790, "rate": 0.068 }, { "upTo": 270050, "rate": 0.0785 }, { "rate": 0.0985 } ]
+      },
+      "standardDeduction": { "single": 15300, "marriedJointly": 30600, "headOfHousehold": 23000 },
+      "payrollTaxes": [ { "name": "Paid leave", "rate": 0.0044, "wageBase": 184500 } ],
+      "reciprocity": [ "MI", "ND" ],
+      "notes": "Head-of-household brackets estimated from the 2025 schedule."
+    },
+    "MS": {
+      "name": "Mississippi",
+      "brackets": { "single": [ { "upTo": 10000, "rate": 0 }, { "rate": 0.04 } ] },
+      "standardDeduction": { "single": 2300, "marriedJointly": 4600, "headOfHousehold": 3400 },
+      "personalExemption": { "single": 6000, "marriedJointly": 12000, "headOfHousehold": 9500 }
+    },
+    "MO": {
+      "name": "Missouri",
+      "localities": [
+        { "name": "Kansas City", "residentRate": 0.01, "nonresidentRate": 0.01 },
+        { "name": "St. Louis", "residentRate": 0.01, "nonresidentRate": 0.01 }
+      ],
+      "brackets": { "single": [ { "upTo": 1348, "rate": 0 }, { "upTo": 2696, "rate": 0.02 }, { "upTo": 4044, "rate": 0.025 }, { "upTo": 5392, "rate": 0.03 }, { "upTo": 6740, "rate": 0.035 }, { "upTo": 8088, "rate": 0.04 }, { "upTo": 9436, "rate": 0.045 }, { "rate": 0.047 } ] },
+      "useFederalStandardDeduction": true,
+      "notes": "Kansas City and St. Louis earnings taxes are included when chosen."
+    },
+    "MT": {
+      "name": "Montana",
+      "brackets": {
+        "single": [ { "upTo": 47500, "rate": 0.047 }, { "rate": 0.0565 } ],
+        "marriedJointly": [ { "upTo": 95000, "rate": 0.047 }, { "rate": 0.0565 } ],
+        "headOfHousehold": [ { "upTo": 71250, "rate": 0.047 }, { "rate": 0.0565 } ]
+      },
+      "useFederalStandardDeduction": true,
+      "reciprocity": [ "ND" ]
+    },
+    "NE": {
+      "name": "Nebraska",
+      "brackets": {
+        "single": [ { "upTo": 4130, "rate": 0.0246 }, { "upTo": 24760, "rate": 0.0351 }, { "rate": 0.0455 } ],
+        "marriedJointly": [ { "upTo": 8250, "rate": 0.0246 }, { "upTo": 49530, "rate": 0.0351 }, { "rate": 0.0455 } ]
+      },
+      "standardDeduction": { "single": 8850, "marriedJointly": 17700, "headOfHousehold": 12950 },
+      "personalCredit": { "single": 176, "marriedJointly": 352 }
+    },
+    "NV": { "name": "Nevada" },
+    "NH": { "name": "New Hampshire" },
+    "NJ": {
+      "name": "New Jersey",
+      "brackets": {
+        "single": [ { "upTo": 20000, "rate": 0.014 }, { "upTo": 35000, "rate": 0.0175 }, { "upTo": 40000, "rate": 0.035 }, { "upTo": 75000, "rate": 0.05525 }, { "upTo": 500000, "rate": 0.0637 }, { "upTo": 1000000, "rate": 0.0897 }, { "rate": 0.1075 } ],
+        "marriedJointly": [ { "upTo": 20000, "rate": 0.014 }, { "upTo": 50000, "rate": 0.0175 }, { "upTo": 70000, "rate": 0.0245 }, { "upTo": 80000, "rate": 0.035 }, { "upTo": 150000, "rate": 0.05525 }, { "upTo": 500000, "rate": 0.0637 }, { "upTo": 1000000, "rate": 0.0897 }, { "rate": 0.1075 } ],
+        "headOfHousehold": [ { "upTo": 20000, "rate": 0.014 }, { "upTo": 50000, "rate": 0.0175 }, { "upTo": 70000, "rate": 0.0245 }, { "upTo": 80000, "rate": 0.035 }, { "upTo": 150000, "rate": 0.05525 }, { "upTo": 500000, "rate": 0.0637 }, { "upTo": 1000000, "rate": 0.0897 }, { "rate": 0.1075 } ]
+      },
+      "noStandardDeduction": true,
+      "personalExemption": { "single": 1000, "marriedJointly": 2000 },
+      "payrollTaxes": [
+        { "name": "Unemployment and workforce funds", "rate": 0.00425, "wageBase": 44800 },
+        { "name": "Disability and family leave insurance", "rate": 0.0042, "wageBase": 171100 }
+      ],
+      "reciprocity": [ "PA" ],
+      "notes": "2026 employee rates: TDI 0.19% + FLI 0.23% up to $171,100; UI/workforce 0.425% up to $44,800."
+    },
+    "NM": {
+      "name": "New Mexico",
+      "brackets": {
+        "single": [ { "upTo": 5500, "rate": 0.015 }, { "upTo": 16500, "rate": 0.032 }, { "upTo": 33500, "rate": 0.043 }, { "upTo": 66500, "rate": 0.047 }, { "upTo": 210000, "rate": 0.049 }, { "rate": 0.059 } ],
+        "marriedJointly": [ { "upTo": 8000, "rate": 0.015 }, { "upTo": 25000, "rate": 0.032 }, { "upTo": 50000, "rate": 0.043 }, { "upTo": 100000, "rate": 0.047 }, { "upTo": 315000, "rate": 0.049 }, { "rate": 0.059 } ]
+      },
+      "useFederalStandardDeduction": true
+    },
+    "NY": {
+      "name": "New York",
+      "localities": [
+        { "name": "New York City", "residentBrackets": {
+            "single": [ { "upTo": 12000, "rate": 0.03078 }, { "upTo": 25000, "rate": 0.03762 }, { "upTo": 50000, "rate": 0.03819 }, { "rate": 0.03876 } ],
+            "marriedJointly": [ { "upTo": 21600, "rate": 0.03078 }, { "upTo": 45000, "rate": 0.03762 }, { "upTo": 90000, "rate": 0.03819 }, { "rate": 0.03876 } ],
+            "headOfHousehold": [ { "upTo": 14400, "rate": 0.03078 }, { "upTo": 30000, "rate": 0.03762 }, { "upTo": 60000, "rate": 0.03819 }, { "rate": 0.03876 } ] },
+          "notes": "Residents only; commuters pay no NYC income tax." },
+        { "name": "Yonkers", "residentShareOfStateTax": 0.1675, "nonresidentRate": 0.005 }
+      ],
+      "brackets": {
+        "single": [ { "upTo": 8500, "rate": 0.039 }, { "upTo": 11700, "rate": 0.044 }, { "upTo": 13900, "rate": 0.0515 }, { "upTo": 80650, "rate": 0.054 }, { "upTo": 215400, "rate": 0.059 }, { "upTo": 1077550, "rate": 0.0685 }, { "upTo": 5000000, "rate": 0.0965 }, { "upTo": 25000000, "rate": 0.103 }, { "rate": 0.109 } ],
+        "marriedJointly": [ { "upTo": 17150, "rate": 0.039 }, { "upTo": 23600, "rate": 0.044 }, { "upTo": 27900, "rate": 0.0515 }, { "upTo": 161550, "rate": 0.054 }, { "upTo": 323200, "rate": 0.059 }, { "upTo": 2155350, "rate": 0.0685 }, { "upTo": 5000000, "rate": 0.0965 }, { "upTo": 25000000, "rate": 0.103 }, { "rate": 0.109 } ],
+        "headOfHousehold": [ { "upTo": 12800, "rate": 0.039 }, { "upTo": 17650, "rate": 0.044 }, { "upTo": 20900, "rate": 0.0515 }, { "upTo": 107650, "rate": 0.054 }, { "upTo": 269300, "rate": 0.059 }, { "upTo": 1616450, "rate": 0.0685 }, { "upTo": 5000000, "rate": 0.0965 }, { "upTo": 25000000, "rate": 0.103 }, { "rate": 0.109 } ]
+      },
+      "standardDeduction": { "single": 8000, "marriedJointly": 16050, "headOfHousehold": 11200 },
+      "payrollTaxes": [
+        { "name": "Paid family leave", "rate": 0.00432, "wageBase": 95349 },
+        { "name": "Disability insurance", "rate": 0.005, "wageBase": 6240 }
+      ],
+      "notes": "New York City and Yonkers taxes are included when chosen. High-income benefit recapture ignored."
+    },
+    "NC": {
+      "name": "North Carolina",
+      "brackets": { "single": [ { "rate": 0.0399 } ] },
+      "standardDeduction": { "single": 12750, "marriedJointly": 25500, "headOfHousehold": 19125 }
+    },
+    "ND": {
+      "name": "North Dakota",
+      "brackets": {
+        "single": [ { "upTo": 48475, "rate": 0 }, { "upTo": 244825, "rate": 0.0195 }, { "rate": 0.025 } ],
+        "marriedJointly": [ { "upTo": 80975, "rate": 0 }, { "upTo": 298075, "rate": 0.0195 }, { "rate": 0.025 } ],
+        "headOfHousehold": [ { "upTo": 64950, "rate": 0 }, { "upTo": 271450, "rate": 0.0195 }, { "rate": 0.025 } ]
+      },
+      "useFederalStandardDeduction": true,
+      "reciprocity": [ "MN", "MT" ]
+    },
+    "OH": {
+      "name": "Ohio",
+      "localities": [
+        { "name": "Columbus", "residentRate": 0.025, "nonresidentRate": 0.025, "taxesRetirementContributions": true },
+        { "name": "Cleveland", "residentRate": 0.025, "nonresidentRate": 0.025, "taxesRetirementContributions": true },
+        { "name": "Cincinnati", "residentRate": 0.018, "nonresidentRate": 0.018, "taxesRetirementContributions": true, "notes": "1.8% since October 2020 (2.1% before), per the City of Cincinnati." },
+        { "name": "Toledo", "residentRate": 0.025, "nonresidentRate": 0.025, "taxesRetirementContributions": true },
+        { "name": "Akron", "residentRate": 0.025, "nonresidentRate": 0.025, "taxesRetirementContributions": true },
+        { "name": "Dayton", "residentRate": 0.025, "nonresidentRate": 0.025, "taxesRetirementContributions": true },
+        { "name": "Another Ohio city or village", "residentRate": 0.02, "nonresidentRate": 0.02, "taxesRetirementContributions": true, "notes": "Typical municipal rate." }
+      ],
+      "brackets": { "single": [ { "upTo": 26050, "rate": 0 }, { "rate": 0.0275 } ] },
+      "noStandardDeduction": true,
+      "personalExemption": { "single": 2400, "marriedJointly": 4800 },
+      "reciprocity": [ "IN", "KY", "MI", "PA", "WV" ],
+      "notes": "Personal exemption shown at the amount for incomes up to $40,000 (it is a little lower above that). City taxes are included when chosen."
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "brackets": {
+        "single": [ { "upTo": 3750, "rate": 0 }, { "upTo": 4900, "rate": 0.025 }, { "upTo": 7200, "rate": 0.035 }, { "rate": 0.045 } ],
+        "marriedJointly": [ { "upTo": 7500, "rate": 0 }, { "upTo": 9800, "rate": 0.025 }, { "upTo": 14400, "rate": 0.035 }, { "rate": 0.045 } ]
+      },
+      "standardDeduction": { "single": 6350, "marriedJointly": 12700, "headOfHousehold": 9350 },
+      "personalExemption": { "single": 1000, "marriedJointly": 2000 },
+      "notes": "HB 2764 brackets for 2026 (0% / 2.5% / 3.5% / 4.5%)."
+    },
+    "OR": {
+      "name": "Oregon",
+      "brackets": {
+        "single": [ { "upTo": 4550, "rate": 0.0475 }, { "upTo": 11400, "rate": 0.0675 }, { "upTo": 125000, "rate": 0.0875 }, { "rate": 0.099 } ],
+        "marriedJointly": [ { "upTo": 9100, "rate": 0.0475 }, { "upTo": 22800, "rate": 0.0675 }, { "upTo": 250000, "rate": 0.0875 }, { "rate": 0.099 } ],
+        "headOfHousehold": [ { "upTo": 9100, "rate": 0.0475 }, { "upTo": 22800, "rate": 0.0675 }, { "upTo": 250000, "rate": 0.0875 }, { "rate": 0.099 } ]
+      },
+      "standardDeduction": { "single": 2910, "marriedJointly": 5820, "headOfHousehold": 4680 },
+      "personalCredit": { "single": 256, "marriedJointly": 512 },
+      "payrollTaxes": [
+        { "name": "Paid leave", "rate": 0.006, "wageBase": 184500 },
+        { "name": "Statewide transit tax", "rate": 0.001 }
+      ],
+      "notes": "Oregon's subtraction for federal tax paid is ignored, so this may slightly overestimate."
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "localities": [
+        { "name": "Philadelphia", "residentRate": 0.037375, "nonresidentRate": 0.034275, "taxesRetirementContributions": true,
+          "notes": "2026 average: 3.74%/3.43% through June, 3.735%/3.425% from July 1." },
+        { "name": "Pittsburgh", "residentRate": 0.03, "nonresidentRate": 0.01, "taxesRetirementContributions": true }
+      ],
+      "brackets": { "single": [ { "rate": 0.0307 } ] },
+      "noStandardDeduction": true,
+      "retirementContributionsTaxable": true,
+      "localTaxRate": 0.01,
+      "payrollTaxes": [ { "name": "Unemployment compensation", "rate": 0.0007 } ],
+      "reciprocity": [ "IN", "MD", "NJ", "OH", "VA", "WV" ],
+      "notes": "Without a chosen city, local earned income tax uses a typical 1%."
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "brackets": { "single": [ { "upTo": 82050, "rate": 0.0375 }, { "upTo": 186450, "rate": 0.0475 }, { "rate": 0.0599 } ] },
+      "standardDeduction": { "single": 11200, "marriedJointly": 22400, "headOfHousehold": 16800 },
+      "personalExemption": { "single": 5250, "marriedJointly": 10500 },
+      "payrollTaxes": [ { "name": "Temporary disability insurance", "rate": 0.012, "wageBase": 89200 } ]
+    },
+    "SC": {
+      "name": "South Carolina",
+      "brackets": { "single": [ { "upTo": 30000, "rate": 0.0199 }, { "rate": 0.0521 } ] },
+      "standardDeduction": { "single": 15000, "marriedSeparately": 15000, "marriedJointly": 30000, "headOfHousehold": 22500 },
+      "standardDeductionPhaseOut": {
+        "single": { "start": 40000, "rate": 0.272727 },
+        "marriedSeparately": { "start": 40000, "rate": 0.272727 },
+        "marriedJointly": { "start": 80000, "rate": 0.272727 },
+        "headOfHousehold": { "start": 60000, "rate": 0.272727 }
+      },
+      "notes": "Act 110 of 2026: 1.99% / 5.21% brackets and the SC income adjusted deduction (SCIAD), which phases out by income."
+    },
+    "SD": { "name": "South Dakota" },
+    "TN": { "name": "Tennessee" },
+    "TX": { "name": "Texas" },
+    "UT": {
+      "name": "Utah",
+      "brackets": { "single": [ { "rate": 0.045 } ] },
+      "noStandardDeduction": true,
+      "personalCredit": { "single": 966, "marriedJointly": 1932, "headOfHousehold": 1449 },
+      "personalCreditPhaseOut": {
+        "single": { "start": 18213, "rate": 0.013 },
+        "headOfHousehold": { "start": 27320, "rate": 0.013 },
+        "marriedJointly": { "start": 36426, "rate": 0.013 }
+      },
+      "notes": "Taxpayer credit is 6% of the federal standard deduction, phased out at 1.3% of income above the 2025 base amounts."
+    },
+    "VT": {
+      "name": "Vermont",
+      "brackets": {
+        "single": [ { "upTo": 49400, "rate": 0.0335 }, { "upTo": 119700, "rate": 0.066 }, { "upTo": 249700, "rate": 0.076 }, { "rate": 0.0875 } ],
+        "marriedJointly": [ { "upTo": 82500, "rate": 0.0335 }, { "upTo": 199450, "rate": 0.066 }, { "upTo": 304000, "rate": 0.076 }, { "rate": 0.0875 } ],
+        "headOfHousehold": [ { "upTo": 66200, "rate": 0.0335 }, { "upTo": 171000, "rate": 0.066 }, { "upTo": 276700, "rate": 0.076 }, { "rate": 0.0875 } ]
+      },
+      "standardDeduction": { "single": 7650, "marriedJointly": 15300, "headOfHousehold": 11450 },
+      "personalExemption": { "single": 5300, "marriedJointly": 10600 }
+    },
+    "VA": {
+      "name": "Virginia",
+      "brackets": { "single": [ { "upTo": 3000, "rate": 0.02 }, { "upTo": 5000, "rate": 0.03 }, { "upTo": 17000, "rate": 0.05 }, { "rate": 0.0575 } ] },
+      "standardDeduction": { "single": 8750, "marriedJointly": 17500 },
+      "personalExemption": { "single": 930, "marriedJointly": 1860 },
+      "reciprocity": [ "DC", "KY", "MD", "PA", "WV" ]
+    },
+    "WA": {
+      "name": "Washington",
+      "payrollTaxes": [
+        { "name": "Paid family and medical leave", "rate": 0.0081, "wageBase": 184500 },
+        { "name": "WA Cares long-term care", "rate": 0.0058 }
+      ]
+    },
+    "WV": {
+      "name": "West Virginia",
+      "brackets": { "single": [ { "upTo": 10000, "rate": 0.0222 }, { "upTo": 25000, "rate": 0.0296 }, { "upTo": 40000, "rate": 0.0333 }, { "upTo": 60000, "rate": 0.0444 }, { "rate": 0.0482 } ] },
+      "noStandardDeduction": true,
+      "personalExemption": { "single": 2000, "marriedJointly": 4000 },
+      "reciprocity": [ "KY", "MD", "OH", "PA", "VA" ]
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "brackets": {
+        "single": [ { "upTo": 15110, "rate": 0.035 }, { "upTo": 51950, "rate": 0.044 }, { "upTo": 332720, "rate": 0.053 }, { "rate": 0.0765 } ],
+        "marriedJointly": [ { "upTo": 20150, "rate": 0.035 }, { "upTo": 69260, "rate": 0.044 }, { "upTo": 443630, "rate": 0.053 }, { "rate": 0.0765 } ],
+        "marriedSeparately": [ { "upTo": 10075, "rate": 0.035 }, { "upTo": 34630, "rate": 0.044 }, { "upTo": 221815, "rate": 0.053 }, { "rate": 0.0765 } ]
+      },
+      "standardDeduction": { "single": 13960, "marriedJointly": 25840, "marriedSeparately": 12280, "headOfHousehold": 18020 },
+      "standardDeductionPhaseOut": {
+        "single": { "start": 19070, "rate": 0.12 },
+        "headOfHousehold": { "start": 19070, "rate": 0.22515 },
+        "marriedJointly": { "start": 26880, "rate": 0.19778 },
+        "marriedSeparately": { "start": 12770, "rate": 0.19778 }
+      },
+      "personalExemption": { "single": 700, "marriedJointly": 1400 },
+      "reciprocity": [ "IL", "IN", "KY", "MI" ]
+    },
+    "WY": { "name": "Wyoming" }
+  }
+}
