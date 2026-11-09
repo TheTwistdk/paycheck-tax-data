@@ -102,7 +102,7 @@
       "standardDeduction": { "single": 5900, "marriedJointly": 11800, "headOfHousehold": 11800 },
       "personalCredit": { "single": 158, "marriedJointly": 316, "headOfHousehold": 158 },
       "payrollTaxes": [ { "name": "State disability insurance (SDI)", "rate": 0.013 } ],
-      "notes": "2026 standard deduction and exemption credits from FTB Tax News (October 2026). Brackets are the 2025 schedule indexed by FTB's 3.4% factor; check against the full FTB schedule published in late December."
+      "notes": "2026 standard deduction and exemption credits from FTB Tax News (October 2026). Brackets are estimated (2025 schedule indexed by FTB's 3.4% factor); verify against the full FTB schedule published in late December."
     },
     "CO": {
       "name": "Colorado",
@@ -182,7 +182,8 @@
       "personalExemption": { "single": 1000, "marriedJointly": 2000 },
       "localTaxRate": 0.0165,
       "reciprocity": [ "KY", "MI", "OH", "PA", "WI" ],
-      "notes": "County income tax uses a typical rate (counties range roughly 0.5%-3.4%)."
+      "notes": "County income tax uses a typical rate (counties range roughly 0.5%-3.4%).",
+      "reviewed": "2026-11-09"
     },
     "IA": {
       "name": "Iowa",
@@ -203,8 +204,8 @@
     "KY": {
       "name": "Kentucky",
       "localities": [
-        { "name": "Louisville", "residentRate": 0.022, "nonresidentRate": 0.0145, "notes": "Approximate combined occupational tax." },
-        { "name": "Lexington", "residentRate": 0.0225, "nonresidentRate": 0.0225, "notes": "Approximate combined occupational tax." }
+        { "name": "Louisville", "residentRate": 0.022, "nonresidentRate": 0.0145, "notes": "Approximate combined occupational tax.", "reviewed": "2026-11-09" },
+        { "name": "Lexington", "residentRate": 0.0225, "nonresidentRate": 0.0225, "notes": "Approximate combined occupational tax.", "reviewed": "2026-11-09" }
       ],
       "brackets": { "single": [ { "rate": 0.035 } ] },
       "standardDeduction": { "single": 3360, "marriedJointly": 3360 },
@@ -238,7 +239,8 @@
       "personalExemption": { "single": 3200, "marriedJointly": 6400 },
       "localTaxRate": 0.0307,
       "reciprocity": [ "DC", "PA", "VA", "WV" ],
-      "notes": "County income tax uses a typical rate (counties range 2.25%-3.3%)."
+      "notes": "County income tax uses a typical rate (counties range 2.25%-3.3%).",
+      "reviewed": "2026-11-09"
     },
     "MA": {
       "name": "Massachusetts",
@@ -381,7 +383,7 @@
         { "name": "Toledo", "residentRate": 0.025, "nonresidentRate": 0.025, "taxesRetirementContributions": true },
         { "name": "Akron", "residentRate": 0.025, "nonresidentRate": 0.025, "taxesRetirementContributions": true },
         { "name": "Dayton", "residentRate": 0.025, "nonresidentRate": 0.025, "taxesRetirementContributions": true },
-        { "name": "Another Ohio city or village", "residentRate": 0.02, "nonresidentRate": 0.02, "taxesRetirementContributions": true, "notes": "Typical municipal rate." }
+        { "name": "Another Ohio city or village", "residentRate": 0.02, "nonresidentRate": 0.02, "taxesRetirementContributions": true, "notes": "Typical municipal rate.", "reviewed": "2026-11-09" }
       ],
       "brackets": { "single": [ { "upTo": 26050, "rate": 0 }, { "rate": 0.0275 } ] },
       "noStandardDeduction": true,
@@ -412,7 +414,8 @@
         { "name": "Paid leave", "rate": 0.006, "wageBase": 184500 },
         { "name": "Statewide transit tax", "rate": 0.001 }
       ],
-      "notes": "Oregon's subtraction for federal tax paid is ignored, so this may slightly overestimate."
+      "notes": "Oregon's subtraction for federal tax paid is ignored, so this may slightly overestimate.",
+      "reviewed": "2026-11-09"
     },
     "PA": {
       "name": "Pennsylvania",
@@ -427,7 +430,8 @@
       "localTaxRate": 0.01,
       "payrollTaxes": [ { "name": "Unemployment compensation", "rate": 0.0007 } ],
       "reciprocity": [ "IN", "MD", "NJ", "OH", "VA", "WV" ],
-      "notes": "Without a chosen city, local earned income tax uses a typical 1%."
+      "notes": "Without a chosen city, local earned income tax uses a typical 1%.",
+      "reviewed": "2026-11-09"
     },
     "RI": {
       "name": "Rhode Island",
