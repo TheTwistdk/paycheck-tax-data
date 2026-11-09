@@ -274,7 +274,7 @@
       "standardDeduction": { "single": 15300, "marriedJointly": 30600, "headOfHousehold": 23000 },
       "payrollTaxes": [ { "name": "Paid leave", "rate": 0.0044, "wageBase": 184500 } ],
       "reciprocity": [ "MI", "ND" ],
-      "notes": "2026 brackets and standard deduction as announced by the Minnesota Department of Revenue (December 2025)."
+      "notes": "2026 brackets and standard deduction as published by the Minnesota Department of Revenue for tax year 2026."
     },
     "MS": {
       "name": "Mississippi",
