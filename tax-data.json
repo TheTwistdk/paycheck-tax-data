@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "dataVersion": "2026.3",
+  "dataVersion": "2026.4",
   "taxYear": 2026,
   "effectiveDate": "2026-01-01",
-  "lastUpdated": "2026-10-25",
+  "lastUpdated": "2026-11-09",
   "sources": [
     "IRS Rev. Proc. 2025-32 (2026 brackets and standard deductions)",
     "SSA 2026 contribution and benefit base ($184,500)",
@@ -11,6 +11,7 @@
     "Tax Foundation, 2026 State Income Tax Rates and Brackets (as of January 1, 2026)",
     "IRS 2026 401(k) limit ($24,500)",
     "SC DOR IL26-20 (Act 110 of 2026); GA DOR 2026 withholding; NY DFS 2026 PFL decision; NJ DOL 2026 rates",
+    "FTB Tax News October 2026 (CA 2026 deduction, credits, 3.4% indexing); AZ HB 4168 (2026); Maine Revenue Services 2026 rate schedule (rev. May 2026); MN DOR 2026 brackets",
     "City finance departments (Philadelphia, Detroit, NYC, Ohio municipalities)",
     "State departments of revenue withholding guides"
   ],
@@ -67,8 +68,8 @@
     "AZ": {
       "name": "Arizona",
       "brackets": { "single": [ { "rate": 0.025 } ] },
-      "standardDeduction": { "single": 8350, "marriedJointly": 16700, "headOfHousehold": 12500 },
-      "notes": "Arizona uses the pre-2025 federal standard deduction for 2026 unless it adopts the higher amounts."
+      "standardDeduction": { "single": 15750, "marriedJointly": 31500, "headOfHousehold": 23625 },
+      "notes": "Standard deduction from HB 4168 (signed June 13, 2026). The extra deduction for charitable gifts is not included."
     },
     "AR": {
       "name": "Arkansas",
@@ -80,28 +81,28 @@
       "name": "California",
       "brackets": {
         "single": [
-          { "upTo": 11079, "rate": 0.01 }, { "upTo": 26264, "rate": 0.02 }, { "upTo": 41452, "rate": 0.04 },
-          { "upTo": 57542, "rate": 0.06 }, { "upTo": 72724, "rate": 0.08 }, { "upTo": 371479, "rate": 0.093 },
-          { "upTo": 445771, "rate": 0.103 }, { "upTo": 742953, "rate": 0.113 }, { "upTo": 1000000, "rate": 0.123 },
+          { "upTo": 11456, "rate": 0.01 }, { "upTo": 27157, "rate": 0.02 }, { "upTo": 42861, "rate": 0.04 },
+          { "upTo": 59498, "rate": 0.06 }, { "upTo": 75197, "rate": 0.08 }, { "upTo": 384109, "rate": 0.093 },
+          { "upTo": 460927, "rate": 0.103 }, { "upTo": 768213, "rate": 0.113 }, { "upTo": 1000000, "rate": 0.123 },
           { "rate": 0.133 }
         ],
         "marriedJointly": [
-          { "upTo": 22158, "rate": 0.01 }, { "upTo": 52528, "rate": 0.02 }, { "upTo": 82904, "rate": 0.04 },
-          { "upTo": 115084, "rate": 0.06 }, { "upTo": 145448, "rate": 0.08 }, { "upTo": 742958, "rate": 0.093 },
-          { "upTo": 891542, "rate": 0.103 }, { "upTo": 1000000, "rate": 0.113 }, { "upTo": 1485906, "rate": 0.123 },
+          { "upTo": 22911, "rate": 0.01 }, { "upTo": 54314, "rate": 0.02 }, { "upTo": 85723, "rate": 0.04 },
+          { "upTo": 118997, "rate": 0.06 }, { "upTo": 150393, "rate": 0.08 }, { "upTo": 768219, "rate": 0.093 },
+          { "upTo": 921854, "rate": 0.103 }, { "upTo": 1000000, "rate": 0.113 }, { "upTo": 1536427, "rate": 0.123 },
           { "rate": 0.133 }
         ],
         "headOfHousehold": [
-          { "upTo": 22173, "rate": 0.01 }, { "upTo": 52530, "rate": 0.02 }, { "upTo": 67716, "rate": 0.04 },
-          { "upTo": 83805, "rate": 0.06 }, { "upTo": 98990, "rate": 0.08 }, { "upTo": 505208, "rate": 0.093 },
-          { "upTo": 606251, "rate": 0.103 }, { "upTo": 1000000, "rate": 0.113 }, { "upTo": 1010417, "rate": 0.123 },
+          { "upTo": 22927, "rate": 0.01 }, { "upTo": 54316, "rate": 0.02 }, { "upTo": 70018, "rate": 0.04 },
+          { "upTo": 86654, "rate": 0.06 }, { "upTo": 102356, "rate": 0.08 }, { "upTo": 522385, "rate": 0.093 },
+          { "upTo": 626864, "rate": 0.103 }, { "upTo": 1000000, "rate": 0.113 }, { "upTo": 1044771, "rate": 0.123 },
           { "rate": 0.133 }
         ]
       },
-      "standardDeduction": { "single": 5706, "marriedJointly": 11412, "headOfHousehold": 11412 },
-      "personalCredit": { "single": 153, "marriedJointly": 306, "headOfHousehold": 153 },
+      "standardDeduction": { "single": 5900, "marriedJointly": 11800, "headOfHousehold": 11800 },
+      "personalCredit": { "single": 158, "marriedJointly": 316, "headOfHousehold": 158 },
       "payrollTaxes": [ { "name": "State disability insurance (SDI)", "rate": 0.013 } ],
-      "notes": "Uses the 2025 indexed brackets and deduction; the FTB publishes 2026 figures late in the year."
+      "notes": "2026 standard deduction and exemption credits from FTB Tax News (October 2026). Brackets are the 2025 schedule indexed by FTB's 3.4% factor; check against the full FTB schedule published in late December."
     },
     "CO": {
       "name": "Colorado",
@@ -218,13 +219,13 @@
     "ME": {
       "name": "Maine",
       "brackets": {
-        "single": [ { "upTo": 27399, "rate": 0.058 }, { "upTo": 64849, "rate": 0.0675 }, { "rate": 0.0715 } ],
-        "marriedJointly": [ { "upTo": 54849, "rate": 0.058 }, { "upTo": 129749, "rate": 0.0675 }, { "rate": 0.0715 } ],
-        "headOfHousehold": [ { "upTo": 41100, "rate": 0.058 }, { "upTo": 97300, "rate": 0.0675 }, { "rate": 0.0715 } ]
+        "single": [ { "upTo": 27399, "rate": 0.058 }, { "upTo": 64849, "rate": 0.0675 }, { "upTo": 1000000, "rate": 0.0715 }, { "rate": 0.0915 } ],
+        "marriedJointly": [ { "upTo": 54849, "rate": 0.058 }, { "upTo": 129749, "rate": 0.0675 }, { "upTo": 1500000, "rate": 0.0715 }, { "rate": 0.0915 } ],
+        "headOfHousehold": [ { "upTo": 41100, "rate": 0.058 }, { "upTo": 97300, "rate": 0.0675 }, { "upTo": 1500000, "rate": 0.0715 }, { "rate": 0.0915 } ]
       },
-      "standardDeduction": { "single": 8350, "marriedJointly": 16700, "headOfHousehold": 12500 },
+      "standardDeduction": { "single": 15700, "marriedJointly": 31400, "headOfHousehold": 23550 },
       "personalExemption": { "single": 5300, "marriedJointly": 10600 },
-      "notes": "Head-of-household brackets estimated from the 2025 schedule; Maine uses the pre-2025 federal standard deduction for 2026."
+      "notes": "2026 schedule revised by Maine Revenue Services (May 2026), including the new 2% surcharge above $1 million ($1.5 million joint and head of household). The phase-out of the deduction and exemption at high incomes is not included."
     },
     "MD": {
       "name": "Maryland",
@@ -266,12 +267,12 @@
       "brackets": {
         "single": [ { "upTo": 33310, "rate": 0.0535 }, { "upTo": 109430, "rate": 0.068 }, { "upTo": 203150, "rate": 0.0785 }, { "rate": 0.0985 } ],
         "marriedJointly": [ { "upTo": 48700, "rate": 0.0535 }, { "upTo": 193480, "rate": 0.068 }, { "upTo": 337930, "rate": 0.0785 }, { "rate": 0.0985 } ],
-        "headOfHousehold": [ { "upTo": 41010, "rate": 0.0535 }, { "upTo": 164790, "rate": 0.068 }, { "upTo": 270050, "rate": 0.0785 }, { "rate": 0.0985 } ]
+        "headOfHousehold": [ { "upTo": 41010, "rate": 0.0535 }, { "upTo": 164800, "rate": 0.068 }, { "upTo": 270060, "rate": 0.0785 }, { "rate": 0.0985 } ]
       },
       "standardDeduction": { "single": 15300, "marriedJointly": 30600, "headOfHousehold": 23000 },
       "payrollTaxes": [ { "name": "Paid leave", "rate": 0.0044, "wageBase": 184500 } ],
       "reciprocity": [ "MI", "ND" ],
-      "notes": "Head-of-household brackets estimated from the 2025 schedule."
+      "notes": "2026 brackets and standard deduction as announced by the Minnesota Department of Revenue (December 2025)."
     },
     "MS": {
       "name": "Mississippi",
